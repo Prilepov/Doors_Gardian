@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url(fonts/centurygothic.ttf), url(fonts/centurygothic_bold.ttf);
+}
+:root {
+    --color1: rgba(72,79,86,255);
+    --color2: rgba(197,204,213,255);
+    --color3: rgba(255,255,255,255);
+    --color4: rgba(0,154,67,255);
+    --color5: rgba(45,56,137,255);
+    --color6: rgba(109,205,52,255);
+}
+body {
+    margin: 0;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+a {
+
+}
+a:hover {
+
+}
+
+/* Menu lead */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > div > img {
+    margin-right: 104px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li {
+    margin-left: 40px;
+}
+header nav ul li a {
+    line-height: 50px;
+    text-align: center;
+    color: rgba(71, 78, 86, 1);
+    text-decoration: none;
+}
+header > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 48px;
+}
+header > ul li {
+    margin-left: 22px;
+}
+
+/* Lead screen */
+.lead_screen > div:first-child {
+    width: 100%;
+    height: calc(100vh - 9vh);
+    background: url(images/lead_background.jpg) no-repeat center /cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lead_screen > div > div:first-child {
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+}
+.lead_screen > div > div:first-child > div:nth-child(1) {
+    font-family: Century Gothic;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--color3);
+}
+.social {
+    display: flex;
+    list-style: none;
+}
+.social li {
+    margin-left: 22px;
+}
+.lead_screen > div > div:nth-child(2) {
+    align-self: center;
+    width: 411px;
+    margin-top: 140px;
+    box-sizing: content-box;
+    text-align: center;
+    background: url(images/background_lead_triangle.png) no-repeat center /contain;
+}
+.lead_screen > div > div:nth-child(2) h1 {
+    font-family: Century Gothic;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 56px;
+    color: var(--color3);
+    text-transform: uppercase;
+    margin: 57px 48px 30px 48px;
+}
+.lead_screen> div > div:nth-child(2) h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 45px;
+    color: var(--color3);
+    margin: 0 12px 104px 12px;
+}
+.lead_screen > div > div:last-child {
+    align-self: flex-end;
+    margin: 40px;
+}
+
+/* Popular doors */
+.pop_doors > div:nth-child(1) {
+    width: 1446px;
+    margin: auto;
+    padding-top: 120px;
+    padding-bottom: 103px;
+    box-sizing: border-box;
+}
+.pop_doors > div > h2:first-child {
+    margin-left: 100px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #00913E;
+    text-transform: uppercase;
+}
+.pop_card {
+    position: relative;
+    width: 372px;
+    height: 415px;
+    margin-bottom: 150px;
+    box-sizing: border-box;
+    margin-left: 100px;
+}
+.pop_card > img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 38px;
+}
+.pop_card:hover .pop_card_info {
+    opacity: 1;
+}
+.pop_card:hover .name_price {
+    background: var(--color4);
+    color: var(--color3);
+}
+.pop_card:hover .like {
+    background: url(images/favorite_white.png) no-repeat center /contain;
+}
+.pop_card > .name_price {
+    width: 370px;
+    height: 90px;
+    border: 2px solid var(--color4);
+    border-radius: 0px 0px 5px 5px;
+    transition: background 1s ease;
+    transition: color 1s;
+}
+.like {
+    position: absolute;
+    right: 24px;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+    background: url(images/favorite_green.png) no-repeat center /contain;
+    transition: background 1s ease;
+}
+.name_price {
+    position: relative;
+    text-align: center;
+}
+.name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    margin: 10px auto 0 auto;
+}
+.price {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 0;
+}
+.pop_card_info {
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 24px 48px 24px;
+    background: rgba(71, 78, 86, 0.9);
+    border-radius: 5px 5px 0px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100% + 38px);
+    line-height: 24px;
+    color: var(--color3);
+}
+.pop_card_info > p:nth-child(2), .pop_card_info > p:nth-child(3) {
+    text-align: right;
+}
+.pop_card_info > p:nth-child(2) {
+    margin-top: 112px;
+    margin-bottom: 47px;
+}
+.prevar , .nextar {
+    z-index: 2;
+    cursor: pointer;
+}
+.prevar {
+    position: absolute;
+    right: 100px;
+    bottom: -30px;
+}
+.nextar {
+    position: absolute;
+    right: 50px;
+    bottom: -30px;
+}
+
+/* Sale */
+.sale > div:nth-child(1) {
+    width: 100%;
+    padding: 30px 0 30px 0;
+    background: url(images/background_sale.jpg) no-repeat center /cover;
+    background-repeat: repeat;
+}
+.sale_slider {
+    width: 1265px;
+    margin: 0 auto 0 auto;
+}
+.slick-dots li.slick-active button::before {
+    color: var(--color4) !important;
+}
+.slick-dots li button::before {
+    color: var(--color3) !important;
+    font-size: 12px !important;
+}
+
+/* All doors 1 */
+.all_doors_1 > div > div {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+.all_doors_1 > div > div > div:nth-child(1) {
+    width: 843px;
+    height: 562px;
+    display: flex;
+    justify-content: flex-end;
+    background: url(images/background_all_doors_1_1.jpg) no-repeat center /contain;
+}
+.all_doors_1 > div > div > div:nth-child(1) > div {
+    position: relative;
+    width: 48%;
+    padding: 50px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0px 5px 5px 0px;
+}
+.all_doors_1 > div > div > div:nth-child(1) > div > h3 {
+    margin-top: 0;
+}
+.all_doors_1 > div > div > div:nth-child(1) > div > p {
+    margin-top: 50px;
+}
+.all_doors_1 > div > div > div:nth-child(1) > div > a {
+    position: absolute;
+    bottom: 40px;
+}
+.all_doors_slider {
+    width: 950px;
+}
