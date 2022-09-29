@@ -664,3 +664,66 @@ header > ul li {
     color: var(--color1) !important;
     opacity: 1 !important;
 }
+
+/* Sale all */
+.sale_all {
+    margin-bottom: 120px;
+}
+.sale_all > div {
+    display: flex;
+    justify-content: space-between;
+}
+.sale_all > div > div:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60px 0 60px 460px;
+    background: linear-gradient(270deg, #B1AB9E 0%, rgba(146, 137, 129, 0) 100%);
+}
+.sale_all > div > div:first-child > div:first-child > h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--color4);
+    text-transform: uppercase;
+}
+.sale_all > div > div:first-child > div:first-child > p {
+    margin: 0 0 10px 106px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+    color: var(--color4);
+}
+.sale_all > div > div:first-child > div:nth-child(2) {
+    align-self: center;
+}
+.sale_all > div > div:first-child > div:nth-child(2) p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.sale_all > div > div:first-child a {
+    font-size: 20px;
+    padding: 2px 27px;
+    line-height: 50px;
+    align-self: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #00913E;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color1);
+}
+.sale_all > div > div:last-child {
+    width: 843px;
+}
+.sale_all > div > div:last-child > img {
+    /* object-fit: cover; */
+    height: 100%;
+}
