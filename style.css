@@ -444,18 +444,21 @@ header > ul li {
 }
 .all_decor_2 .prevar {
     position: absolute;
-    left: 55px;
+    left: 85px;
     bottom: -30px;
 }
 .all_decor_2 .nextar {
     position: absolute;
-    left: 105px;
+    left: 135px;
     bottom: -30px;
 }
 
 /* Products */
 .products {
     background: #928981;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 23%;
 }
 .products > div:first-child {
     width: 843px;
@@ -490,7 +493,6 @@ header > ul li {
     position: relative;
 }
 .products > div:last-child > div a::after {
-    /* content: 'замки'; */
     font-family: Century Gothic;
     font-size: 20px;
     font-weight: 400;
@@ -518,3 +520,147 @@ header > ul li {
 }
 
 /* Constructor */
+.constructor > div {
+    width: 1592px;
+    background: url(images/background_constructor.jpg) no-repeat center /cover;
+    position: relative;
+    z-index: 2;
+    float: right;
+    margin: 120px 0 120px 100%;
+}
+.constructor > div > div {
+    width: 893px;
+    padding: 70px /*350px*/ 270px 44px 56px;
+    box-sizing: border-box;
+    background: linear-gradient(-270deg, #474E56 67.01%, rgba(71, 78, 86, 0) 100%);
+    border-radius: 0px 5px 5px 0px;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+.constructor > div > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color3);
+}
+.constructor > div > div > div > h2 {
+    font-size: 28px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.constructor > div > div > div > p {
+    font-size: 16px;
+    line-height: 28px;
+}
+.constructor > div > div > div > a {
+    width: 234px;
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    background: rgba(0, 145, 62, 0.86);
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--color3);
+}
+
+/* Blog */
+.blog {
+    margin-bottom: 120px; 
+}
+.blog > div {
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(90deg, #C8CFD7 0%, #FFFFFF 100%);
+}
+.blog > div > div {
+    width: 1590px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.blog > div > div > h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--color4);
+    text-transform: uppercase;
+}
+.blog > div > div > p {
+    margin: 0 0 10px 106px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+    color: var(--color4);
+}
+.blog_slider {
+    /* height: 570px; */
+    /* width: 1280px; */
+    position: relative;
+}
+.blog_slider_slice {
+    display: flex;
+    /* height: 570px; */
+    width: 1280px;
+    position: relative;
+}
+.blog_slider_slice > h3 {
+    width: 755px;
+    height: 80px;
+    right: -310px;
+    padding: 10px 326px 10px 20px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color3);
+    background: linear-gradient(90deg, #00913E 32.71%, #FFFFFF 100%);
+    border-radius: 5px 0px 0px 5px;
+    box-sizing: border-box;
+}
+.blog_slider_slice > div:nth-child(2) {
+    width: 409px;
+    height: 434px;
+    border-top: 35px solid var(--color4);
+    border-bottom: 35px solid var(--color4);
+}
+.blog_slider_slice > div:nth-child(2) > img {
+    object-fit: contain;
+}
+.blog_slider_slice > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+.blog_slider_slice > div:last-child > p {
+    margin-top: 150px;
+    margin-left: 55px;
+}
+.blog_slider_slice > div:last-child > a {
+    color: #000000;
+}
+.blog_slider_slice > div:last-child > .archiv {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--color4);
+    text-decoration: none;
+}
+.blog_slider .slick-dots {
+    right: 200px !important;
+}
+.blog_slider .slick-dots li.slick-active button::before {
+    color: var(--color4) !important;
+    opacity: 1 !important;
+}
+.blog_slider .slick-dots li button::before {
+    color: var(--color1) !important;
+    opacity: 1 !important;
+}

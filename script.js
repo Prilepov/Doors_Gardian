@@ -55,3 +55,16 @@ $('.all_decor_slider').slick({
     prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
     nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
 });
+
+/* Blog slider */
+$('.blog_slider').slick({
+    centerMode: false,
+    // centerPadding: '60px',
+    slidesToShow: 1,
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 1000,
+    dots: true,
+    arrows: false,
+});
