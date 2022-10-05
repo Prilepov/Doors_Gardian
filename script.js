@@ -68,3 +68,28 @@ $('.blog_slider').slick({
     dots: true,
     arrows: false,
 });
+
+/* Photo slider */
+$('.photo_slider').slick({
+    centerMode: false,
+    // centerPadding: '60px',
+    slidesToShow: 3,
+    infinite: false,
+    slidesToScroll: 1,
+    autoplay: false,
+    // autoplaySpeed: 1000,
+    dots: false,
+    arrows: true,
+    prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
+    nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
+});
+
+/* Photo switcher */
+$( document ).ready(function() {
+    $(".switcher").click(function(e) {
+      $(this).addClass('active');{
+        $('.tab-content.active').removeClass('active');
+        $('.tab-content.' + $(this).data('target')).addClass('active');
+      }
+    })
+  })

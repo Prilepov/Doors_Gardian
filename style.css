@@ -727,3 +727,61 @@ header > ul li {
     /* object-fit: cover; */
     height: 100%;
 }
+
+/* Photo */
+.photo > div {
+    display: flex;
+    background-image: url(images/background_line.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+    background-size: 100% 13%;
+}
+.photo > div > div:first-child {
+    margin-left: 15%;
+}
+.photo > div > div:first-child > div:first-child {
+    text-align: center;
+}
+.tab-content {
+    width: 837px;
+}
+.tab-content > div:first-child > img {
+    width: 49%;
+}
+.tab-content > div:nth-child(2) {
+    height: 200px;
+    background-color: var(--color1);
+    color: #FFFFFF;
+    padding: 25px 107px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.photo_slider {
+    width: 502px;
+    height: 100%;
+    padding-top: 30%;
+    padding-bottom: auto;
+    transform: rotate(-90deg);
+}
+.photo_slider > div img {
+    transform: rotate(90deg);
+}
+.photo_slider .slick-slide {
+    /* width: 170px !important; */
+}
+.photo_slider .prevar {
+    bottom: 22%;
+    left: 10%;
+    z-index: 3;
+}
+.photo_slider .nextar {
+    bottom: 22%;
+    left: 18%;
+    z-index: 3;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
