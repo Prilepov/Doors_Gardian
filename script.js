@@ -1,12 +1,11 @@
 /* Slick carousel */
 $('.pop').slick({
     centerMode: false,
-    // centerPadding: '60px',
     slidesToShow: 3,
-    infinite: false,
+    infinite: true,
     slidesToScroll: 1,
-    autoplay: false,
-    // autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 1000,
     dots: false,
     arrows: true,
     prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
@@ -16,11 +15,10 @@ $('.pop').slick({
 /* Sale slider */
 $('.sale_slider').slick({
     centerMode: false,
-    // centerPadding: '60px',
     slidesToShow: 1,
     infinite: true,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1000,
     dots: true,
     arrows: false,
@@ -29,12 +27,10 @@ $('.sale_slider').slick({
 /* All doors slider */
 $('.all_doors_slider').slick({
     centerMode: false,
-    // centerPadding: '60px',
     slidesToShow: 2,
     infinite: false,
     slidesToScroll: 1,
     autoplay: false,
-    // autoplaySpeed: 1000,
     dots: false,
     arrows: true,
     prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
@@ -44,12 +40,10 @@ $('.all_doors_slider').slick({
 /* All decor slider */
 $('.all_decor_slider').slick({
     centerMode: false,
-    // centerPadding: '60px',
     slidesToShow: 3,
     infinite: false,
     slidesToScroll: 1,
     autoplay: false,
-    // autoplaySpeed: 1000,
     dots: false,
     arrows: true,
     prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
@@ -59,11 +53,10 @@ $('.all_decor_slider').slick({
 /* Blog slider */
 $('.blog_slider').slick({
     centerMode: false,
-    // centerPadding: '60px',
     slidesToShow: 1,
     infinite: true,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1000,
     dots: true,
     arrows: false,
@@ -72,12 +65,10 @@ $('.blog_slider').slick({
 /* Photo slider */
 $('.photo_slider').slick({
     centerMode: false,
-    // centerPadding: '60px',
     slidesToShow: 3,
-    infinite: false,
+    infinite: true,
     slidesToScroll: 1,
     autoplay: false,
-    // autoplaySpeed: 1000,
     dots: false,
     arrows: true,
     prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
@@ -93,3 +84,17 @@ $( document ).ready(function() {
       }
     })
   })
+
+  /* Review slider */
+$('.review_slider').slick({
+    centerMode: false,
+    slidesToShow: 2,
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    dots: false,
+    arrows: true,
+    prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
+    nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
+});
