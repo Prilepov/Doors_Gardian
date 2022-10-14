@@ -883,3 +883,183 @@ header > ul li {
     margin-left: 1%;
     color: var(--color4);
 }
+
+/* Contacts */
+.contacts {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 15%;
+    position: relative;
+}
+.line {
+    height: 137px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(90deg, #00913E 28.12%, rgba(0, 145, 62, 0) 100%);
+}
+.head_map {
+    width: 1190px;
+    z-index: 7;
+}
+.contacts_head {
+    height: 127px;
+    margin-top: 1%;
+    margin-left: 25%;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.contacts_head > div > h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--color3);
+    text-transform: uppercase;
+    width: 400px;
+}
+.contacts_head > div > p {
+    margin: 0 0 10px 150px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+    color: var(--color3);
+}
+.address {
+    width: 409px;
+    padding-bottom: 120px;
+    z-index: 7;
+    background: var(--color3);
+}
+.address_single_slide {
+}
+.address_single_slide > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px var(--color4);
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+.address_single_slide > div > div:first-child {
+    border-bottom: solid 2px var(--color4);
+}
+.address_single_slide > div > div:first-child p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+.address_single_slide > div > div > ul > li:first-child {
+    list-style-image: url(images/address_adress_li.png);
+}
+.address_single_slide > div > div > ul > li:nth-child(2) {
+    list-style-image: url(images/address_phone_li.png);
+}
+.address_single_slide > div > div > ul > li:nth-child(3) {
+    list-style-image: url(images/address_mail_li.png);
+}
+.address_single_slide > div > div > ul > li:nth-child(4) {
+    list-style-image: url(images/address_skype_li.png);
+}
+.address_single_slide > div > div > ul > li:nth-child(5) {
+    list-style-image: url(images/address_time_li.png);
+}
+.address_single_slide > div > div > ul > li a {
+    color: #000000;
+    text-decoration: none;
+}
+.address_single_slide > div > a {
+    padding: 4px 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: solid 2px var(--color4);
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    text-decoration: none;
+    color: var(--color4);
+}
+.address_slider .nextar {
+    right: 0;
+    bottom: -3%;
+}
+.address_slider .prevar {
+    right: 50px;
+    bottom: -3%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color1);
+    color: var(--color3);
+    padding: 1%;
+}
+.footer_content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer_content > div:first-child {
+    width: 275px;
+    text-align: center;
+}
+.footer_content > div:first-child > img {
+    width: 100%;
+}
+.footer_menu {
+    display: flex;
+}
+.footer_menu ul:first-child {
+    padding-left: 0;
+}
+.footer_menu ul {
+    list-style: none;
+}
+.footer_menu ul li {
+    padding-bottom: 1em;
+}
+.footer_menu ul li a {
+    text-decoration: none;
+    color: var(--color3);
+}
+.social_block {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-end;
+    text-align: center;
+}
+.social_block .social {
+    padding-left: 0;
+}
+.social_block .social li a {
+    background: none;
+}
+.social_block .social li:first-child {
+    margin-left: 0;
+}
+.social_block a {
+    text-align: center;
+    width: 100%;
+}
+.social_block > a:last-child {
+    text-decoration: none;
+    background: var(--color4);
+    color: var(--color3);
+    padding: 2px 6px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    line-height: 50px;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25);
+}
+footer > div:nth-child(2) {
+    width: 997px;
+    text-align: center;
+}
