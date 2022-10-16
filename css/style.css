@@ -72,7 +72,7 @@ header > ul li {
 .lead_screen > div:first-child {
     width: 100%;
     height: calc(100vh - 9vh);
-    background: url(images/lead_background.jpg) no-repeat center /cover;
+    background: url(/images/lead_background.jpg) no-repeat center /cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,7 +101,7 @@ header > ul li {
     margin-top: 140px;
     box-sizing: content-box;
     text-align: center;
-    background: url(images/background_lead_triangle.png) no-repeat center /contain;
+    background: url(/images/background_lead_triangle.png) no-repeat center /contain;
 }
 .lead_screen > div > div:nth-child(2) h1 {
     font-family: Century Gothic;
@@ -164,7 +164,7 @@ header > ul li {
     color: var(--color3);
 }
 .pop_card:hover .like {
-    background: url(images/favorite_white.png) no-repeat center /contain;
+    background: url(/images/favorite_white.png) no-repeat center /contain;
 }
 .pop_card > .name_price {
     width: 99%;
@@ -180,7 +180,7 @@ header > ul li {
     top: 16px;
     width: 24px;
     height: 24px;
-    background: url(images/favorite_green.png) no-repeat center /contain;
+    background: url(/images/favorite_green.png) no-repeat center /contain;
     transition: background 1s ease;
 }
 .name_price {
@@ -243,7 +243,7 @@ header > ul li {
 .sale > div:nth-child(1) {
     width: 100%;
     padding: 30px 0 30px 0;
-    background: url(images/background_sale.jpg) no-repeat center /cover;
+    background: url(/images/background_sale.jpg) no-repeat center /cover;
     background-repeat: repeat;
 }
 .sale_slider {
@@ -273,7 +273,7 @@ header > ul li {
     display: flex;
 }
 .all_doors_1 > div > div > div:nth-child(1) {
-    background: url(images/background_all_doors_1_1.jpg) no-repeat center /contain;
+    background: url(/images/background_all_doors_1_1.jpg) no-repeat center /contain;
     justify-content: flex-end;
 }
 .all_doors_1 > div > div > div:nth-child(1) > div, .all_doors_2 > div > div > div:nth-child(1) > div {
@@ -325,7 +325,7 @@ header > ul li {
     margin-bottom: 120px;
 }
 .all_doors_2 > div > div > div:nth-child(1) {
-    background: url(images/background_all_doors_1_2.jpg) no-repeat center /contain;
+    background: url(/images/background_all_doors_1_2.jpg) no-repeat center /contain;
     justify-content: flex-start;
 }
 .all_doors_2 .prevar {
@@ -381,7 +381,7 @@ header > ul li {
     display: flex;
 }
 .all_decor_1 > div > div > div:nth-child(1) {
-    background: url(images/background_all_decor_1_1.jpg) no-repeat center /contain;
+    background: url(/images/background_all_decor_1_1.jpg) no-repeat center /contain;
     justify-content: flex-end;
 }
 .all_decor_1 > div > div > div:nth-child(1) > div, .all_decor_2 > div > div > div:nth-child(1) > div {
@@ -444,7 +444,7 @@ header > ul li {
     margin-bottom: 120px;
 }
 .all_decor_2 > div > div > div:nth-child(1) {
-    background: url(images/background_all_decor_1_2.jpg) no-repeat center /contain;
+    background: url(/images/background_all_decor_1_2.jpg) no-repeat center /contain;
     justify-content: flex-start;
     margin-left: 29px;
 }
@@ -528,7 +528,7 @@ header > ul li {
 /* Constructor */
 .constructor > div {
     width: 1592px;
-    background: url(images/background_constructor.jpg) no-repeat center /cover;
+    background: url(/images/background_constructor.jpg) no-repeat center /cover;
     position: relative;
     z-index: 2;
     float: right;
@@ -741,7 +741,7 @@ header > ul li {
 }
 .photo > div {
     display: flex;
-    background-image: url(images/background_line.jpg);
+    background-image: url(/images/background_line.jpg);
     background-repeat: no-repeat;
     background-position-y: 60%;
     background-size: 100% 13%;
@@ -1313,7 +1313,7 @@ footer > div:nth-child(2) {
     width: 39px;
     height: 39px;
     background-size: 100%;
-    background-image: url(images/door_price_button_1.png);
+    background-image: url(/images/door_price_button_1.png);
     background-repeat: no-repeat;
 }
 .favorite {
@@ -1327,7 +1327,7 @@ footer > div:nth-child(2) {
     width: 30px;
     height: 30px;
     background-size: 100%;
-    background-image: url(images/door_price_button_2.png);
+    background-image: url(/images/door_price_button_2.png);
     background-repeat: no-repeat;
 }
 .door_info table {
