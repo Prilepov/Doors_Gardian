@@ -85,6 +85,40 @@ $( document ).ready(function() {
     })
   })
 
+/* Dropdown switcher */
+$( document ).ready(function() {
+    $(".switcher_drop_1").click(function(e) {
+      $(this).addClass('active');{
+        $('.drop_content_1.active').removeClass('active');
+        $('.drop_content_1.' + $(this).data('target')).addClass('active');
+      }
+    })
+  })
+  $( document ).ready(function() {
+    $(".switcher_drop_2").click(function(e) {
+      $(this).addClass('active');{
+        $('.drop_content_2.active').removeClass('active');
+        $('.drop_content_2.' + $(this).data('target')).addClass('active');
+      }
+    })
+  })
+  $( document ).ready(function() {
+    $(".switcher_drop_3").click(function(e) {
+      $(this).addClass('active');{
+        $('.drop_content_3.active').removeClass('active');
+        $('.drop_content_3.' + $(this).data('target')).addClass('active');
+      }
+    })
+  })
+  $( document ).ready(function() {
+    $(".switcher_drop_4").click(function(e) {
+      $(this).addClass('active');{
+        $('.drop_content_4.active').removeClass('active');
+        $('.drop_content_4.' + $(this).data('target')).addClass('active');
+      }
+    })
+  })
+
   /* Review slider */
 $('.review_slider').slick({
     centerMode: false,
@@ -168,3 +202,64 @@ $('.door_stuff_slider').slick({
     prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
     nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
 });
+
+/* Dropdown */
+(function(){
+	var d = document,
+	accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+	setAria,
+	setAccordionAria,
+	switchAccordion,
+  touchSupported = ('ontouchstart' in window),
+  pointerSupported = ('pointerdown' in window);
+  
+  skipClickDelay = function(e){
+    e.preventDefault();
+    e.target.click();
+  }
+
+		setAriaAttr = function(el, ariaType, newProperty){
+		el.setAttribute(ariaType, newProperty);
+	};
+	setAccordionAria = function(el1, el2, expanded){
+		switch(expanded) {
+      case "true":
+      	setAriaAttr(el1, 'aria-expanded', 'true');
+      	setAriaAttr(el2, 'aria-hidden', 'false');
+      	break;
+      case "false":
+      	setAriaAttr(el1, 'aria-expanded', 'false');
+      	setAriaAttr(el2, 'aria-hidden', 'true');
+      	break;
+      default:
+				break;
+		}
+	};
+//function
+switchAccordion = function(e) {
+  console.log("triggered");
+	e.preventDefault();
+	var thisAnswer = e.target.parentNode.nextElementSibling;
+	var thisQuestion = e.target;
+	if(thisAnswer.classList.contains('is-collapsed')) {
+		setAccordionAria(thisQuestion, thisAnswer, 'true');
+	} else {
+		setAccordionAria(thisQuestion, thisAnswer, 'false');
+	}
+  	thisQuestion.classList.toggle('is-collapsed');
+  	thisQuestion.classList.toggle('is-expanded');
+		thisAnswer.classList.toggle('is-collapsed');
+		thisAnswer.classList.toggle('is-expanded');
+ 	
+  	thisAnswer.classList.toggle('animateIn');
+	};
+	for (var i=0,len=accordionToggles.length; i<len; i++) {
+		if(touchSupported) {
+      accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+    }
+    if(pointerSupported){
+      accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+    }
+    accordionToggles[i].addEventListener('click', switchAccordion, false);
+  }
+})();
