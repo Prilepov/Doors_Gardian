@@ -118,6 +118,14 @@ $( document ).ready(function() {
       }
     })
   })
+  $( document ).ready(function() {
+    $(".switcher_drop_5").click(function(e) {
+      $(this).addClass('active');{
+        $('.drop_content_5.active').removeClass('active');
+        $('.drop_content_5.' + $(this).data('target')).addClass('active');
+      }
+    })
+  })
 
   /* Review slider */
 $('.review_slider').slick({
@@ -263,3 +271,20 @@ switchAccordion = function(e) {
     accordionToggles[i].addEventListener('click', switchAccordion, false);
   }
 })();
+
+/* Order count */
+
+
+var numCount = document.getElementById('num_count');
+var plusBtn = document.getElementById('button_plus');
+var minusBtn = document.getElementById('button_minus');
+plusBtn.onclick = function() {
+  var qty = parseInt(numCount.value);
+  qty = qty + 1;
+  numCount.value = qty;
+}
+minusBtn.onclick = function() {
+  var qty = parseInt(numCount.value);
+  qty = qty - 1;
+  numCount.value = qty;
+}
