@@ -1852,7 +1852,7 @@ footer > div:nth-child(2) {
     border-radius: 5em;
     margin-left: -10em;
     padding: 0.92% 0 0.92% 2.75%;
-} 
+}  
 .check {
     background: var(--color4);
     border-radius: 5em;
@@ -1917,11 +1917,18 @@ footer > div:nth-child(2) {
 .checkout {
     border-collapse: collapse;
     width: 100%;
+    font-size: 700;
 }
 .checkout th , .checkout td {
     border: solid 1px var(--color4);
     height: 4em;
     padding: 1em;
+    box-sizing: border-box;
+    font-size: 700;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
     box-sizing: border-box;
 }
 .amount {
@@ -1929,6 +1936,8 @@ footer > div:nth-child(2) {
     justify-content: space-between;
     align-items: center;
     border: none !important;
+    border-bottom: solid 1px var(--color4) !important;
+    border-radius: 0% !important;
 }
 .amount div {
     display: flex;
@@ -1938,7 +1947,6 @@ footer > div:nth-child(2) {
 #num_count {
     appearance: textfield;
     border: none;
-    width: 3em;
 }
 #button_minus , #button_plus {
     width: 1.7em;
@@ -1954,4 +1962,81 @@ footer > div:nth-child(2) {
 }
 .empty_border {
     border: none !important;
+}
+.text_right {
+    text-align: right;
+    color: var(--color4);
+}
+#promocod {
+    border: solid 1px var(--color4);
+    border-radius: 5px;
+    font-size: calc( 4px + 12 * ( 100vw / 1920 ));
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 7px 20px;
+}
+.checkout_form button {
+    height: 2.7em;
+    border: solid 2px var(--color4);
+    border-radius: 5px;
+    text-align: left;
+    padding: 0.13em 1.7em;
+    font-size: calc( 5px + 14 * ( 100vw / 1920 ));
+    text-transform: uppercase;
+    color: var(--color4);
+    margin-top: 1.1em;
+    float: right;
+    margin-top: 7%; 
+    margin-bottom: 15%;  
+    cursor: pointer; 
+}
+
+.user_data_del {
+    margin-bottom: 5.85%;
+}
+.user_data_del form > div {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 1em;
+}
+.user_data_del label {
+    background: #00913E;
+    display: inline-block;
+    width: 35%;
+    border-radius: 5em 0% 0% 5em;
+    padding: 0.92% 0 0.92% 2.75%;
+    box-sizing: border-box;
+    color: var(--color3);
+}
+.user_data_del input:not(.check input) {
+    width: calc(65% + 10em);
+    box-sizing: border-box;
+    color: rgba(208, 23, 23, 1);
+    border-radius: 5em;
+    margin-left: -10em;
+    padding: 0.92% 0 0.92% 2.75%;
+} 
+.user_data_del > button {
+    padding: 0.92% 8.03%;
+    border: solid 1px var(--color4);
+    box-sizing: border-box;
+    color: var(--color4);
+    border-radius: 5em;
+    margin-top: 1em;
+}
+.user_data_del > button:hover {
+    color: var(--color3);
+    background: var(--color4);
+    cursor: pointer;
+}
+.short_label label {
+    /* width: 100%; */
+    width: 90% !important;
+}
+.short_label input {
+    /* width: calc(20% + 10em) !important; */
+    margin-left: -10em !important;
+    /* width: 20%; */
+
 }

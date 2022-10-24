@@ -282,11 +282,11 @@
                     </div>
                 </div> 
                 <div>
-                    <form action="">
+                    <form action="" class="checkout_form">
                         <table class="checkout">
                             <thead>
                                 <tr>
-                                    <th>Модель</th>
+                                    <th class="rad_top_left">Модель</th>
                                     <th>Артикул</th>
                                     <th>Цена</th>
                                     <th>Количество</th>
@@ -297,32 +297,112 @@
                                 <tr>
                                     <td>Стальная дверь ДС 7</td>
                                     <td>07165-6546416</td>
-                                    <td>83 400,00 руб</td>
+                                    <td class="wd_table">83 400,00 руб</td>
                                     <td class="amount">  
                                         <input type="number" step="1" min="1" id="num_count" name="quantity" value="1" title="Qty">
                                         <div>
-                                            <input type="button" value="&plus;" id="button_minus">
-                                            <input type="button" value="&minus;" id="button_plus"></td>    
+                                            <input type="button" value="&plus;" id="button_plus">
+                                            <input type="button" value="&minus;" id="button_minus">
                                         </div>
+                                    </td>    
                                     <td>83 400,00 руб</td>
                                 </tr>
                                 <tr>
-                                    <td class="empty_border" colspan="2">Для получения скидки введите ПРОМОКОД</td>
+                                    <td class="empty_border text_right" colspan="2">Для получения скидки введите ПРОМОКОД</td>
                                     <td  class="empty_border"><input type="text" id="promocod"></td>
-                                    <td>Скидка</td>
+                                    <td class="empty_border">Скидка</td>
                                     <td>4 170,00 руб</td>
                                 </tr>
                                 <tr>
                                     <td colspan="3" class="empty_border"></td>
-                                    <td>Итого</td>
+                                    <td class="empty_border">Итого</td>
                                     <td>79 230,00 руб</td>
                                 </tr>
                             </tbody>
-                        </table>    
+                        </table> 
+                        <button type="submit">оформить заказ</button>   
                     </form>
                 </div>
+                <div>
+                    <div class="user_data_del">
+                        <form action="" method="post" id="cabinet_user_data_del">
+                            <div>
+                                <label for="">Адрес доставки
+                                </label>    
+                                <input type="text" placeholder="ФИО" id="user_name" name="user_name">
+                            </div>
+                            <div class="short_label">
+                                <label for="">Стоимость доставки
+                                </label>    
+                                <input type="tel" placeholder="+7 987 654 32 10" id="telephone" name="telephone">
+                                <label for="">Дата и ремя доставки
+                                </label>    
+                                <input type="tel" placeholder="+7 987 654 32 10" id="telephone" name="telephone">
+                            </div>
+                            <div>
+                                <label for="">Получатель
+                                </label>    
+                                <input type="email" placeholder="Введите e-mail" id="email" name="email">
+                            </div>
+                            <div class="short_label">
+                                <label for="">Телефон
+                                </label>    
+                                <input type="text" placeholder="Введите адрес" id="address" name="address">
+                                <label for="">E-mail
+                                </label>    
+                                <input type="text" placeholder="Введите адрес" id="address" name="address">
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <p>Поставив галочку, вы даете согласие на обработку своих персональных данных.</p>
+                                <a href="">Пользовательское соглашение.</a>
+                            </div>
+                        </form>  
+                    </div>   
+                    <form action="" class="checkout_form">
+                        <table class="checkout">
+                            <thead>
+                                <tr>
+                                    <th class="rad_top_left">Модель</th>
+                                    <th>Артикул</th>
+                                    <th>Цена</th>
+                                    <th>Количество</th>
+                                    <th>Стоимость</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Стальная дверь ДС 7</td>
+                                    <td>07165-6546416</td>
+                                    <td class="wd_table">83 400,00 руб</td>
+                                    <td class="amount">  
+                                        <input type="number" step="1" min="1" id="num_count" name="quantity" value="1" title="Qty">
+                                    </td>    
+                                    <td>83 400,00 руб</td>
+                                </tr>
+                                <tr>
+                                    <td class="empty_border text_right" colspan="2">Для получения скидки введите ПРОМОКОД</td>
+                                    <td  class="empty_border"><input type="text" id="promocod"></td>
+                                    <td class="empty_border">Скидка</td>
+                                    <td>4 170,00 руб</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="empty_border"></td>
+                                    <td class="empty_border">Доставка</td>
+                                    <td>1 500,00 руб</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="empty_border"></td>
+                                    <td class="empty_border">К оплате</td>
+                                    <td>80 730,00 руб</td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                        <button type="submit">оплатить</button>   
+                    </form>
+ 
+                </div>
             </div>
-            
         </section>
     </main>
         <footer>
