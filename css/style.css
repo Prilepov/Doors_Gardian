@@ -613,9 +613,12 @@ main {
 
 /* Blog */
 .blog {
-    margin-bottom: 5.85%; 
+    margin-bottom: 5.85%;
+    display: block;
+    position: relative; 
 }
 .blog > div {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     background: linear-gradient(90deg, #C8CFD7 0%, #FFFFFF 100%);
