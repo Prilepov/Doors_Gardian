@@ -290,12 +290,12 @@
                                     <th>Артикул</th>
                                     <th>Цена</th>
                                     <th>Количество</th>
-                                    <th>Стоимость</th>
+                                    <th class="rad_top_right">Стоимость</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Стальная дверь ДС 7</td>
+                                    <td class="rad_bottom_left">Стальная дверь ДС 7</td>
                                     <td>07165-6546416</td>
                                     <td class="wd_table">83 400,00 руб</td>
                                     <td class="amount">  
@@ -308,15 +308,17 @@
                                     <td>83 400,00 руб</td>
                                 </tr>
                                 <tr>
-                                    <td class="empty_border text_right" colspan="2">Для получения скидки введите ПРОМОКОД</td>
-                                    <td  class="empty_border"><input type="text" id="promocod"></td>
+                                    <td class="empty_border text_right two_col" colspan="2">Для получения скидки введите ПРОМОКОД</td>
+                                    <td  class="empty_border no_pad"><input type="text" id="promocod"></td>
                                     <td class="empty_border">Скидка</td>
                                     <td>4 170,00 руб</td>
                                 </tr>
                                 <tr>
                                     <td colspan="3" class="empty_border"></td>
+                                    <td class="empty_border"></td>
+                                    <td class="empty_border"></td>
                                     <td class="empty_border">Итого</td>
-                                    <td>79 230,00 руб</td>
+                                    <td class="rad_bottom_left rad_bottom_right">79 230,00 руб</td>
                                 </tr>
                             </tbody>
                         </table> 
@@ -329,28 +331,28 @@
                             <div>
                                 <label for="">Адрес доставки
                                 </label>    
-                                <input type="text" placeholder="ФИО" id="user_name" name="user_name">
+                                <input type="text" placeholder="г. Санкт- Петербург, ул. Стальных дверей, д. 88, корп. 2, кв. 88" id="del_address" name="del_user_name">
                             </div>
                             <div class="short_label">
                                 <label for="">Стоимость доставки
                                 </label>    
-                                <input type="tel" placeholder="+7 987 654 32 10" id="telephone" name="telephone">
-                                <label for="">Дата и ремя доставки
+                                <input type="text" placeholder="1 500,00 руб" id="del_cost" name="del_cost">
+                                <label for="" class="left_slice">Дата и ремя доставки
                                 </label>    
-                                <input type="tel" placeholder="+7 987 654 32 10" id="telephone" name="telephone">
+                                <input type="tel" placeholder="27.08.2022 г. с 10-00 до 13-00" id="del_data" name="del_data">
                             </div>
                             <div>
                                 <label for="">Получатель
                                 </label>    
-                                <input type="email" placeholder="Введите e-mail" id="email" name="email">
+                                <input type="text" placeholder="Сидоров Иван Петрович" id="del_user" name="del_user">
                             </div>
                             <div class="short_label">
                                 <label for="">Телефон
                                 </label>    
-                                <input type="text" placeholder="Введите адрес" id="address" name="address">
-                                <label for="">E-mail
+                                <input type="tel" placeholder="+7-987-654-32-10" id="del_tel" name="del_tel">
+                                <label for="" class="left_slice">E-mail
                                 </label>    
-                                <input type="text" placeholder="Введите адрес" id="address" name="address">
+                                <input type="email" placeholder="sidortopchik@yandex.ru" id="del_email" name="address">
                             </div>
                             <div class="check">
                                 <input type="checkbox" name="" id="">
@@ -367,12 +369,12 @@
                                     <th>Артикул</th>
                                     <th>Цена</th>
                                     <th>Количество</th>
-                                    <th>Стоимость</th>
+                                    <th class="rad_top_right">Стоимость</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Стальная дверь ДС 7</td>
+                                    <td class="rad_bottom_left">Стальная дверь ДС 7</td>
                                     <td>07165-6546416</td>
                                     <td class="wd_table">83 400,00 руб</td>
                                     <td class="amount">  
@@ -381,26 +383,29 @@
                                     <td>83 400,00 руб</td>
                                 </tr>
                                 <tr>
-                                    <td class="empty_border text_right" colspan="2">Для получения скидки введите ПРОМОКОД</td>
-                                    <td  class="empty_border"><input type="text" id="promocod"></td>
+                                    <td class="empty_border text_right two_col" colspan="2">Для получения скидки введите ПРОМОКОД</td>
+                                    <td  class="empty_border no_pad"><input type="text" id="promocod"></td>
                                     <td class="empty_border">Скидка</td>
                                     <td>4 170,00 руб</td>
                                 </tr>
                                 <tr>
                                     <td colspan="3" class="empty_border"></td>
+                                    <td class="empty_border"></td>
+                                    <td class="empty_border"></td>
                                     <td class="empty_border">Доставка</td>
                                     <td>1 500,00 руб</td>
                                 </tr>
                                 <tr>
                                     <td colspan="3" class="empty_border"></td>
+                                    <td class="empty_border"></td>
+                                    <td class="empty_border"></td>
                                     <td class="empty_border">К оплате</td>
-                                    <td>80 730,00 руб</td>
+                                    <td class="rad_bottom_left rad_bottom_right">80 730,00 руб</td>
                                 </tr>
                             </tbody>
                         </table> 
                         <button type="submit">оплатить</button>   
                     </form>
- 
                 </div>
             </div>
         </section>
