@@ -273,8 +273,6 @@ switchAccordion = function(e) {
 })();
 
 /* Order count */
-
-
 var numCount = document.getElementById('num_count');
 var plusBtn = document.getElementById('button_plus');
 var minusBtn = document.getElementById('button_minus');
@@ -288,3 +286,23 @@ minusBtn.onclick = function() {
   qty = qty - 1;
   numCount.value = qty;
 }
+
+/* Car series switcher */
+$( document ).ready(function() {
+  $(".switcher").click(function(e) {
+    $(this).addClass('active');{
+      $('.tab-content.active').removeClass('active');
+      $('.tab-content.' + $(this).data('target')).addClass('active');
+    }
+  })
+})
+
+/* Select model catalog switcher */
+$( document ).ready(function() {
+  $(".switcher_select").click(function(e) {
+    $(this).addClass('active');{
+      $('.tab-select.active').removeClass('active');
+      $('.tab-select.' + $(this).data('target')).addClass('active');
+    }
+  })
+})

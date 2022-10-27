@@ -46,7 +46,6 @@ header > div > img {
 header nav {
     margin-right: 6.6%;
     margin-left: 6.6%;
-    /* padding-right: 5%; */
 }
 header nav ul {
     display: flex;
@@ -74,10 +73,32 @@ header > ul {
     align-items: center;
     list-style: none;
     padding-left: 0;
-    padding-right: 1.5%;
+    margin-left: 0;
+    padding-right: 4.5%;
 }
 header > ul li {
-    margin-left: 8.75%;
+    margin-left: 10.17%;
+}
+header > ul li a {
+    width: 3.2em;
+    height: 3.2em;
+    display: inline-block;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+header > ul li:nth-child(1) a {
+    background: url(/images/icon_favorites.png);
+    background-size: 80% !important;
+    background-position: center center;
+}
+header > ul li:nth-child(2) a {
+    background: url(/images/icon_basket.png);
+}
+header > ul li:nth-child(3) a {
+    background: url(/images/icon_profile.png);
+}
+header > ul li:nth-child(4) a {
+    background: url(/images/icon_burger.png);
 }
 .selected {
     color: #00913E;
@@ -209,7 +230,7 @@ main {
 }
 .pop_card > .name_price {
     width: 99%;
-    height: 6.25em;
+    height: 7em;
     border: 2px solid var(--color4);
     border-radius: 0px 0px 5px 5px;
     transition: background 1s ease;
@@ -217,8 +238,8 @@ main {
 }
 .like {
     position: absolute;
-    right: 1.66em;
-    top: 1.11em;
+    right: 0.8em;
+    top: 0.8em;
     width: 1.66em;
     height: 1.66em;
     background: url(../images/favorite_green.png) no-repeat center /contain;
@@ -227,11 +248,12 @@ main {
 .name_price {
     position: relative;
     text-align: center;
+    height: 7em;
 }
 .name {
     font-weight: bold;
     font-size: calc( 4px + 12* ( 100vw / 1920 ));
-    line-height: calc( 10px + 30 * ( 100vw / 1920 ));
+    line-height: calc( 5px + 15 * ( 100vw / 1920 ));
     margin: 2.73% auto 0 auto;
 }
 .price {
@@ -254,7 +276,7 @@ main {
     border-radius: 5px 5px 0px 0px;
     box-sizing: border-box;
     width: 99.9%;
-    height: calc(100% - 16%);
+    height: calc(100% - 7.3em);
     line-height: calc( 3px + 19 * ( 100vw / 1920 ));
     color: var(--color3);
 }
@@ -2104,7 +2126,6 @@ footer > div:nth-child(2) {
 }
 .model_card_left {
     width: 45%;
-    /* height: 596px; */
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -2121,7 +2142,6 @@ footer > div:nth-child(2) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* padding: 4% 3%; */
     margin-left: 3%;
     margin-right: 0.3%;
 }
@@ -2234,4 +2254,83 @@ footer > div:nth-child(2) {
 }
 .bottom_padding {
     padding-bottom: 7%;
+}
+
+/* Models catalog */
+.model_catalog {
+    padding: 3% 15% 0 15%;
+    /* width: 100%; */
+}
+.model_catalog_slice {
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_3to1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 27%;
+    height: 100%;
+    margin-bottom: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+.card_3to1 > img {
+    width: 100%;
+    max-height: 100%;
+    padding-bottom: 10.24%;
+}
+.card_3to1 .pop_card_info {
+    height: calc(100% - 6.9em);
+    width: 99%;
+}
+.card_3to1:hover .pop_card_info {
+    opacity: 1;
+}
+.card_3to1:hover .name_price {
+    background: var(--color4);
+    color: var(--color3);
+}
+.card_3to1:hover .like {
+    background: url(../images/favorite_white.png) no-repeat center /contain;
+}
+.card_3to1 > .name_price {
+    width: 99%;
+    border: 2px solid var(--color4);
+    border-radius: 0px 0px 5px 5px;
+    transition: background 1s ease;
+    transition: color 1s;
+    box-sizing: border-box;
+}
+.switcher_catalog {
+    margin-bottom: 8%;
+    margin-left: 3%;
+}
+.switcher_catalog select {
+    border: none;
+    background: var(--color3);
+    color: var(--color1);
+    cursor: pointer;
+}
+.tab-content {
+    visibility: hidden;
+    height: 0em !important;
+}
+.tab-content.active {
+    visibility: visible;
+    height: 100% !important;
+}
+.sale_slider_model_cat {
+    width: 70%;
+}
+.card_3to1_width {
+    width: 80%;
+    height: 100%;
+}
+.card_3to1_width .pop_card_info {
+    height: calc(100% - 7.2em);
+    width: 100%;
 }
