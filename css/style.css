@@ -1289,8 +1289,8 @@ footer > div:nth-child(2) {
     margin-top: 5%;
     margin-bottom: 2.96%;
 }
-.decor_select_right_slider_1 > .slick-slide > img {
-    width: 100%;
+.decor_select_right_slider_1  .slick-slide  img {
+    width: 90%;
 }
 .decor_select_right_slider_1 .prevar {
     right: 6em;
@@ -1492,12 +1492,14 @@ footer > div:nth-child(2) {
     color: #000000;
 }
 .door_stuff_slider .nextar {
-    right: 11%;
-    bottom: -14%;
+    /* right: 11%; */
+    right: 1rem;
+    /* bottom: -14%; */
+    bottom: -2.8rem;
 }
 .door_stuff_slider .prevar {
-    left: 10%;
-    bottom: -14%;
+    left: 0.7rem;
+    bottom: -2.8rem;
 }
 .ms_part1_price {
     display: flex;
@@ -2141,7 +2143,7 @@ footer > div:nth-child(2) {
     width: 55%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-left: 3%;
     margin-right: 0.3%;
 }
@@ -2259,7 +2261,6 @@ footer > div:nth-child(2) {
 /* Models catalog */
 .model_catalog {
     padding: 3% 15% 0 15%;
-    /* width: 100%; */
 }
 .model_catalog_slice {
     margin-bottom: 5%;
@@ -2307,7 +2308,11 @@ footer > div:nth-child(2) {
 }
 .switcher_catalog {
     margin-bottom: 8%;
-    margin-left: 3%;
+    /* margin-left: 3%; */
+    border-spacing: 4em 0;
+}
+.switcher_catalog td {
+    /* width: 15em; */
 }
 .switcher_catalog select {
     border: none;
@@ -2333,4 +2338,77 @@ footer > div:nth-child(2) {
 .card_3to1_width .pop_card_info {
     height: calc(100% - 7.2em);
     width: 100%;
+}
+
+/* Model card doors */
+.horse_door_price {
+    margin: 5% 4.19% 1.39% 4.19%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.horse_door_price > div {
+    margin-right: 4em;
+}
+.h2_title_less {
+    margin: 0;
+    font-weight: bold;
+    font-size: calc( 10px + 20 * ( 100vw / 1920 ));
+    line-height: calc( 20px + 30 * ( 100vw / 1920 ));
+    color: var(--color3);
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+.model_card_right .h2_title_small {
+    color: var(--color3);
+    justify-items: flex-end;
+    display: grid;
+    font-size: calc( 6px + 14 * ( 100vw / 1920 ));
+    margin-top: 0;
+    padding-top: 0;
+}
+.half_width {
+    width: 50% !important;
+}
+.center_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.two_view {
+    width: 100%;
+}
+.two_view img {
+    width: 95% !important;
+    object-fit: contain;
+}
+.two_view div {
+    height: 100%;
+}
+.model_card_doors_table {
+    margin-top: 7%;
+    width: 100%;
+    border-collapse: collapse;
+}
+.model_card_doors_table th {
+    box-sizing: border-box;
+    width: 50%;
+    text-align: left;
+    padding-left: 10%;
+    font-weight: normal;
+}
+.model_card_doors_table td {
+    width: 50%;
+    color: var(--color4);
+}
+.justify_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+.text_center {
+    text-align: center;
 }
