@@ -2412,3 +2412,18 @@ footer > div:nth-child(2) {
 .text_center {
     text-align: center;
 }
+.card_not_slide {
+    height: 82%;
+    margin-bottom: 8%;
+}
+.card_not_slide .price {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.green_txt {
+    color: var(--color4);
+}
+.btn_padding_l_r {
+    padding-left: 8%;
+    padding-right: 8%;
+}

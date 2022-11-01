@@ -287,7 +287,7 @@ minusBtn.onclick = function() {
   numCount.value = qty;
 }
 
-/* Car series switcher */
+/* Switcher */
 $( document ).ready(function() {
   $(".switcher").click(function(e) {
     $(this).addClass('active');{
