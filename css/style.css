@@ -1654,6 +1654,7 @@ footer > div:nth-child(2) {
     width: 17.38%;
     height: 86.78%;
     position: relative;
+    overflow: hidden;
 }
 .decor_var_card img {
     width: 100%;
@@ -2517,4 +2518,31 @@ footer > div:nth-child(2) {
 }
 .accordion dd:last-child {
     border-bottom: solid 1px var(--color2);
+}
+
+/* Orders */
+.order_block {
+    border: solid 1px var(--color4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.order_block_head {
+    width: 100%;
+    font-size: calc( 2px + 14 * ( 100vw / 1920 ));
+    font-weight: bold;
+    color: var(--color3);
+    background: var(--color4);
+    box-sizing: border-box;
+    padding: 3%;
+}
+.order_block_head table {
+    width: 100%;
+}
+.order_block_head td:first-child , .order_block_head td:nth-child(2) {
+    width: 22.5%;
+}
+.order_block_head td:last-child {
+    width: 65%;
+    text-align: right;
 }
