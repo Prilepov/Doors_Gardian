@@ -812,6 +812,7 @@ main {
     background: linear-gradient(90deg, #00913E 32.71%, #FFFFFF 100%);
     border-radius: 5px 0px 0px 5px;
     box-sizing: border-box;
+    min-height: 3.97em;
 }
 .blog_slider_slice > div:nth-child(2) {
     width: 31.95%;
@@ -2709,3 +2710,80 @@ footer > div:nth-child(2) {
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* Blog page */
+.blog_page > div {
+    background: none;
+}
+.blog_page_body {
+    width: 100% !important; 
+}
+.blog_header {
+    padding-top: 1%;
+    padding-left: 16%;
+    margin-bottom: 5%;
+    background: linear-gradient(90deg, #00913E 32.71%, #FFFFFF 100%);
+    color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog_header div {
+    width: 30%;
+}
+.related_articles_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1.5%;
+    margin-right: 21.5%;
+}
+.related_articles {
+    width: 13em;
+    padding: 2% 15em 2% 5em;
+    font-size: calc( 5px + 15 * ( 100vw / 1920 ));
+    color: var(--color4);
+    border: solid 2px var(--color4);
+    border-radius: 5px;
+    background: var(--color3);
+}
+.blog_header h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: calc( 15px + 33 * ( 100vw / 1920 ));
+    line-height: calc( 20px + 30 * ( 100vw / 1920 ));
+    text-transform: uppercase;
+}  
+.blog_header p {
+    margin: 0 0 0.63% 6.66%;
+    font-weight: bold;
+    font-size: calc( 6px + 10 * ( 100vw / 1920 ));
+    line-height: calc( 20px + 30 * ( 100vw / 1920 ));
+    padding-bottom: 1%;
+}
+.blog_page_body .blog_slider_slice > div:nth-child(2) {
+    width: 31.95%;
+    border: none; 
+    flex-shrink: 0;
+    max-height: 31.95em;
+    background: var(--color4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blog_page_body .blog_slider_slice > div:nth-child(2) img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .blog_page_wrapper {
+    margin-top: 2.5%;
+    padding-bottom: 5%;
+    border-bottom: 2px solid rgba(71, 78, 86, 0.2);
+  }
+  .blog_page_body .blog_slider_slice {
+    margin-left: 15%;  
+  }
+  .blog_page .blog_slider_slice > div:last-child {
+    width: 50%;
+  }
