@@ -2255,7 +2255,7 @@ footer > div:nth-child(2) {
 }
 .model_card_line {
     background-image: linear-gradient(-90deg, #00913E 28.12%, rgba(0, 145, 62, 0) 100%);;
-    background-size: 100% 17%;
+    background-size: 100% 11em;
     background-repeat: no-repeat;
 }
 .model_card_body {
@@ -2659,4 +2659,56 @@ footer > div:nth-child(2) {
 .order_block_head td:last-child {
     width: 65%;
     text-align: right;
+}
+
+/* Fitting card */
+.fitting_card {
+    
+}
+.fitting_card_right h2 {
+    margin-bottom: 12%;
+}
+.fitting_card_right p {
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.fitting_card_right p:nth-child(2) {
+    color: var(--color1);
+}
+.green_upper_18_txt {
+    text-transform: uppercase;
+    font-size: calc( 4px + 14 * ( 100vw / 1920 ));
+    color: var(--color4);
+}
+.fitting_card_doors_table {
+    margin-top: 0;
+}
+.fitting_card_doors_table th {
+    padding-left: 5%;
+}
+.fitting_card_doors_table tr {
+    display: flex;
+    margin-bottom: 1.5%;
+}
+.fitting_card_doors_table dd {
+    font-size: calc( 1px + 13 * ( 100vw / 1920 ));
+}
+.single_column_table dd {
+    margin-left: 5%;
+}
+.fitting_pop_doors > div:nth-child(1) {
+    width: 76%;
+    box-sizing: border-box;
+}
+.fitting_card_left {
+    width: 100%;
+    margin-top: 7%;
+    height: 50em;
+    padding: 1%;
+    box-sizing: border-box;
+}
+.justif_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
