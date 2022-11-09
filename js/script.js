@@ -75,6 +75,19 @@ $('.photo_slider').slick({
     nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
 });
 
+/* Sale page slider */
+$('.sale_page_slider').slick({
+  centerMode: false,
+  slidesToShow: 3,
+  infinite: false,
+  slidesToScroll: 1,
+  autoplay: false,
+  dots: false,
+  arrows: true,
+  prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
+  nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
+});
+
 /* Photo switcher */
 $( document ).ready(function() {
     $(".switcher").click(function(e) {
