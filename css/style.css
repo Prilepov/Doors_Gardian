@@ -2752,7 +2752,7 @@ footer > div:nth-child(2) {
 }
 .blog_header {
     padding-top: 1%;
-    padding-left: 16%;
+    padding-left: 15%;
     margin-bottom: 5%;
     background: linear-gradient(90deg, #00913E 32.71%, #FFFFFF 100%);
     color: var(--color3);
@@ -2999,4 +2999,108 @@ footer > div:nth-child(2) {
 }
 .guarantee_detail div:last-child {
     width: 65%;
+}
+
+/* Installation methods page */
+.install_page_slice {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    padding-left: 15%;
+    padding-right: 15%;
+    /* border-bottom: 2px solid rgba(71, 78, 86, 0.2); */
+    /* margin-top: 3%; */
+    /* padding-bottom: 5%; */
+}
+.method_card {
+    width: 32%;
+    border: solid 2px var(--color4);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0 2% 1% 2%;
+}
+.method_card_horizontal {
+    width: 100%;
+    border: solid 2px var(--color4);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2%;
+    margin-top: 2%;
+}
+.method_card_horizontal h3 {
+    color: var(--color4);
+    text-transform: uppercase;
+    text-align: center;
+}
+.method_card_horizontal div {
+    width: 48%;
+}
+.method_card:not(:first-child) {
+    margin-left: 2%;
+}
+.install_page_body .blog_header div {
+    width: 100%;
+}
+.install_page_body .blog_header p {
+    margin-left: 0.5%;
+}
+.method_card h3 {
+    text-align: center;
+    color: var(--color4);
+    text-transform: uppercase;
+}
+.methods_img_holder {
+    width: 100%;
+}
+.methods_img_holder img {
+    width: 100%;
+    max-height: 100%;
+    object-position: center;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.method_card_horizontal div img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.methods_properties {
+    margin-top: 5%;
+}
+.methods_properties h3 {
+    text-align: center;
+    color: var(--color4);
+    width: 100%;
+    text-transform: uppercase;
+}
+.methods_properties_slice {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2%;
+    margin-top: 2%;
+}
+.methods_properties_slice div {
+    width: 48%;
+}
+.methods_properties_slice p {
+    margin-top: 0;
+}
+.methods_properties_slice div img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.reverse {
+    flex-direction: row-reverse;
 }
