@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 420px)" href="./css/mobilestyle.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Входные двери</a></li>
+                <li><a href="">Декоративная отделка</a></li>
+                <li><a href="">Конструктор</a></li>
+                <li><a href="">Акции</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="rel_pos">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">О компании</a></li>
+                    <li><a class="menu__item" href="#">Замки</a></li>
+                    <li><a class="menu__item" href="#">Фурнитура</a></li>
+                    <li><a class="menu__item" href="#">Наличники и доборы</a></li>
+                    <li><a class="menu__item" href="#">Отбортовки</a></li>
+                    <li><a class="menu__item" href="#">Дополнительные опции</a></li>
+                    <li><a class="menu__item" href="#">Способы установки</a></li>
+                    <li><a class="menu__item" href="#">Гарантия и сервис</a></li>
+                    <ul class="social">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </ul>
+            </div>
+        </ul>
+    </header>
+    <main>
+        <section class="forms">
+            <div class="form autorization">
+                <div>
+                    <p>Авторизация</p>
+                </div>
+                <div class="form_body">
+                    <form action="" name="autorization_form">
+                        <div>
+                            <div>
+                                <label for="phone_mail">Телефон / E-mail</label>
+                                <input type="text" placeholder="Телефон / E-mail" id="phone_mail" name="phone_mail">
+                            </div>
+                            <div>
+                                <label for="">Пароль</label>
+                                <input type="password" placeholder="Введите пароль" id="pass" name="pass">
+                            </div>
+                        </div>
+                        <div class="pass_forget">
+                            <a href="">Забыли пароль?</a>
+                        </div>
+                    </form>
+                    <button id="pass_btn" type="submit" form="autorization_form">ВХОД</button>
+                </div>
+            </div>
+            <div class="form pass_rec">
+                <div>
+                    <p>Восстановление пароля</p>
+                </div>
+                <div class="form_body">
+                    <form action="recovery_form">
+                        <div>
+                            <div>
+                                <label for="phone_mail">E-mail</label>
+                                <input type="text" placeholder="Введите E-mail" id="phone_mail" name="phone_mail">
+                            </div>
+                        </div>
+                    </form>
+                    <button id="pass_btn" type="submit" form="recovery_form">восстановить</button>
+                </div>
+            </div>
+            <div class="feedback">
+                <div>
+                    <div class="logo_holder"></div>
+                    <div class="feedback_txt">
+                        <p>
+                            Оставьте заявку и наши специалисты проконсультируют Вас по всем вопросам 
+                        </p>
+                    </div>
+                    <form action="feedback_form" class="feedback_body" name="feedback_form">
+                        <div>
+                            <label for="user_name">Имя</label>
+                            <input type="text" placeholder="Введите имя" id="user_name" name="user_name">
+                        </div>
+                        <div>
+                            <label for="user_phone">Телефон</label>
+                            <input type="tel" placeholder="Введите номер телефона" id="user_phone" name="user_phone">
+                        </div>
+                        <div>
+                            <label for="user_mail">E-mail</label>
+                            <input type="email" placeholder="Введите E-mail" id="user_mail" name="user_mail">
+                        </div>
+                        <div class="personal_data">
+                            <input type="checkbox">
+                            <p>
+                                Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных
+                            </p>
+                        </div>
+                    </form>
+                    <button id="pass_btn" type="submit" form="feedback_form">отправить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_content">
+            <div>
+                <img src="images/logo.png" alt="">
+                <p>
+                    Официальный дилер завода Гардиан
+                    по Санкт-Петербургу и Ленинградской области
+                </p>
+            </div>
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="">Гарантии и сервис</a></li>
+                    <li><a href="">Правила эксплуатации дверей</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Сертификаты</a></li>
+                    <li><a href="">Правовая информация</a></li>
+                    <li><a href="">Вакансии</a></li>
+                    <li><a href="">Способы установки</a></li>
+                </ul>
+            </div>
+            <div class="social_block">
+                <ul class="social">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>    
+                <a href="#">оставить заявку</a>
+            </div>
+        </div>
+        <div>
+            <p>
+                Вся информация и цены, представленные на сайте, носят исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации
+            </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

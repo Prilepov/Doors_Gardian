@@ -3104,3 +3104,172 @@ footer > div:nth-child(2) {
 .reverse {
     flex-direction: row-reverse;
 }
+
+/* Forms */
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7%;
+}
+.form {
+    width: 40%;   
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: solid 2px var(--color4);
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: var(--color4);
+    margin-bottom: 5%;
+}
+.form > div {
+    width: 100%;
+}
+.form > div > p {
+    text-align: right;
+    color: var(--color3);
+    margin-right: 10%;
+}
+.form_body {
+    background: var(--color3);
+    border-radius: 20px;
+    padding: 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_body form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_body div > div {
+    background: var(--color4);
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 3%;
+}
+.form_body label {
+    color: var(--color3);
+    width: 35%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.5em;
+    padding-left: 2em;
+}
+.form_body input {
+    width: 65%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: solid 2px var(--color4);
+    padding-left: 2em;
+    color: var(--color4);
+}
+#pass {
+    color: red;
+}
+.pass_forget {
+    align-self: flex-end;
+    margin-right: 5%;
+}
+.pass_forget a {
+    color: var(--color1);
+}
+#pass_btn {
+    margin-top: 3%;
+    color: var(--color4);
+    background: var(--color3);
+    border: solid 2px var(--color4);
+    border-radius: 20em;
+    padding: 0.5em 2em;
+    text-align: center;
+    box-sizing: content-box;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#pass_btn:hover {
+    background: var(--color4);
+    color: var(--color3);
+}
+.pass_rec #phone_mail {
+    color: red;
+}
+.pass_rec #pass_btn {
+    margin-top: 19.8%;
+}
+.feedback {
+    width: 60%;
+    background: url(../images/feedback_background.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    margin: auto 15% 5% 15%;
+    border-radius: 20px;
+}
+.feedback > div {
+    width: 42%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+}
+.logo_holder {
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+    padding: 2em 6em;
+    box-sizing: border-box;
+}
+.feedback_txt {
+    width: 60%;
+    text-align: center;
+    line-height: calc( 6px + 12 * ( 100vw / 1920 ));
+}
+.feedback_body {
+    width: 90%;
+    margin-top: 3%;
+}
+.feedback_body > div {
+    background: var(--color4);
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 3%;
+  }
+.feedback_body label {
+    color: var(--color3);
+    width: 35%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.5em;
+    padding-left: 2em;
+}
+.feedback_body input {
+    width: 65%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: solid 2px var(--color4);
+    padding-left: 2em;
+    color: var(--color4);
+}
+.personal_data {
+    display: flex;
+    align-items: flex-start;
+    background: none !important;
+}
+.personal_data input {
+    margin-top: 0.5em;
+    width: auto;
+}
+.personal_data p {
+    margin-top: 0;
+    padding-left: 1em;
+    font-size: calc( 3px + 7 * ( 100vw / 1920 ));
+    line-height: calc( 1px + 11 * ( 100vw / 1920 ));
+}

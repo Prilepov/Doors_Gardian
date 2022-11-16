@@ -1,16 +1,35 @@
-/* Slick carousel */
-$('.pop').slick({
-    centerMode: false,
-    slidesToShow: 3,
-    infinite: true,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 1000,
-    dots: false,
-    arrows: true,
-    prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
-    nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
-});
+/* Slick carousel + mobile version*/
+$(document).ready(function($) {
+  if (window.innerWidth < 420) {
+    $('.pop').slick({
+      centerMode: false,
+      slidesToShow: 1,
+      infinite: true,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 1000,
+      dots: false,
+      arrows: true,
+      prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
+      nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
+  });
+  }
+  else {
+    $('.pop').slick({
+      centerMode: false,
+      slidesToShow: 3,
+      infinite: true,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 1000,
+      dots: false,
+      arrows: true,
+      prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
+      nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
+  });
+  }
+})
+;
 
 /* Sale slider */
 $('.sale_slider').slick({
