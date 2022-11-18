@@ -619,8 +619,15 @@ main {
     right: 3%;
 }
 .all_decor_slider .slick-slide {
-    width: 21.80% !important;
-    margin-left: 3.01% !important;
+    /* width: 21.80% !important; */
+    /* margin-left: 3.01% !important; */
+    width: 100%;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    box-sizing: border-box;
+}
+.all_decor_slider .pop_card {
+    width: 50%;
 }
 .all_decor_1 .nextar {
     right: 0;
