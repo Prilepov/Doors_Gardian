@@ -23,10 +23,12 @@
         font-size: calc( 12px + 13 * ( 100vw / 1920 ));
         font-weight: normal;
         line-height: calc( 16px + 12 * ( 100vw / 1920 ));
+        /* overflow-x: hidden; */
     }
     body, html {
         height: 100%;
         max-width: 100vw;
+        overflow-x: hidden;
     }
     header {
         max-width: 100vw;
@@ -50,6 +52,9 @@
         max-width: 100vw;
     }
     /* Lead page */
+    .lead_screen {
+        position: relative;
+    }
     .lead_screen > div:first-child {
         background: url(../images/lead_background_mobile.jpg) no-repeat center /cover;
     }
@@ -493,5 +498,18 @@
         bottom: 0;
         width: 100%;
         height: 88vh;
+    }
+    /* For mobile */
+    #desctop_review {
+        display: none;
+    }
+    #mobile_review {
+        display: block;
+    }
+    #desctop_address {
+        display: none;
+    }
+    #mobile_address {
+        display: block;
     }
 }
