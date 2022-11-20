@@ -512,4 +512,17 @@
     #mobile_address {
         display: block;
     }
+    .desctop_photo {
+        display: none;
+    }
+    #mobile_photo {
+        display: block;
+    }
+    .photo > div {
+        background: none;
+    }
+    .mob_photo_slice > div:nth-child(2) {
+        margin-bottom: 5%;
+        min-height: 14em;
+    }
 }

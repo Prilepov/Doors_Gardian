@@ -3328,3 +3328,37 @@ footer > div:nth-child(2) {
 #mobile_address {
     display: none;
 }
+#mobile_photo {
+    display: none;
+}
+.mob_photo_slice {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+.mob_photo_slice > div:first-child {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1%;
+}
+.mob_photo_slice > div:nth-child(2) {
+    height: auto;
+    padding: 3%;
+}
+.mob_photo_slice > div:nth-child(2) {
+    background-color: var(--color1);
+    color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.mob_photo_slice img {
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 2%;
+}
+.mob_photo_slice img:first-child {
+    margin-right: 1.5%;
+}
+.mob_photo_slice img:last-child {
+    margin-left: 1.5%;
+}

@@ -299,6 +299,20 @@ $('.door_stuff_slider').slick({
     nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
 });
 
+/* Mobile photo slider */
+$('.mobile_photo').slick({
+  centerMode: false,
+  slidesToShow: 1,
+  infinite: true,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 1000,
+  dots: false,
+  arrows: true,
+  prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
+  nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
+});
+
 /* Dropdown */
 (function(){
 	var d = document,
