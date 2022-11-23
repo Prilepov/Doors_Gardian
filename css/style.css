@@ -114,6 +114,9 @@ main {
 }
 
 /* Hamburger menu */
+.hamburger-menu_mob {
+    /* display: none; */
+}
 #menu__toggle {
   opacity: 0;
 }
@@ -3361,4 +3364,7 @@ footer > div:nth-child(2) {
 }
 .mob_photo_slice img:last-child {
     margin-left: 1.5%;
+}
+.hamburger-menu_mob {
+    display: none;
 }
