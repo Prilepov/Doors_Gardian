@@ -313,6 +313,20 @@ $('.mobile_photo').slick({
   nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
 });
 
+/* Sale bad slider */
+$('.sale_bad').slick({
+  centerMode: false,
+  slidesToShow: 4,
+  infinite: true,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 1000,
+  dots: false,
+  arrows: true,
+  prevArrow: "<img src='images/prev_arrow.png' class='prevar' alt='1'>",
+  nextArrow: "<img src='images/next_arrow.png' class='nextar' alt='1'>"
+});
+
 /* Dropdown */
 (function(){
 	var d = document,

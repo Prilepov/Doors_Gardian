@@ -2559,10 +2559,12 @@ footer > div:nth-child(2) {
     text-align: left;
     padding-left: 10%;
     font-weight: normal;
+    vertical-align: baseline;
 }
 .model_card_doors_table td {
     width: 50%;
     color: var(--color4);
+    vertical-align: baseline;
 }
 .justify_column {
     display: flex;
@@ -3433,4 +3435,39 @@ footer > div:nth-child(2) {
 }
 .bold_txt {
     font-weight: bold;
+}
+
+/* Model card sale */
+.sale_card_right .h2_title_small {
+    margin-top: -1.7em;
+    margin-bottom: 4.2em;
+}
+.sale_bad_slice {
+    position: relative;
+    margin-left: 1%;
+    margin-top: 2%;
+    background: var(--color1);
+}
+.sale_bad_slice img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.sale_bad_slice p {
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    margin: 10% 19%;
+}
+.sale_card .center_flex {
+    justify-content: flex-start;
+}
+.sale_bad .nextar {
+    right: 0%;
+    bottom: -30%;
+}
+.sale_bad .prevar {
+    right: 7.8%;
+    bottom: -30%;
 }
