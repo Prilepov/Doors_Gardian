@@ -374,6 +374,13 @@ switchAccordion = function(e) {
   }
 })();
 
+/* Simple order switcher */
+$(document).ready(function(){
+	$(".green_txt").click(function(){
+		$(".order_detail").toggleClass("order_detail_show"); return false;
+	});
+});
+
 /* Order count */
 var numCount = document.getElementById('num_count');
 var plusBtn = document.getElementById('button_plus');
