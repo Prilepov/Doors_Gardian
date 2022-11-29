@@ -784,4 +784,13 @@
     .hamburger-menu_mob {
         display: block;
     }
+    .body_wrapper {
+        margin: 5% 3%;
+    }
+    .two_right_sm, .two_reverse_sm {
+        flex-direction: column;
+    }   
+    .two_right_sm>div:first-child, .two_right_sm>div:last-child {
+        width: 100%;
+    }
 }

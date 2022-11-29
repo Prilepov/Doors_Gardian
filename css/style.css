@@ -135,9 +135,6 @@ main {
 }
 
 /* Hamburger menu */
-.hamburger-menu_mob {
-    /* display: none; */
-}
 
 #menu__toggle {
     opacity: 0;
@@ -4107,4 +4104,69 @@ footer>div:nth-child(2) div:last-child {
 .sale_bad .prevar {
     right: 7.8%;
     bottom: -30%;
+}
+
+/* About */
+
+.body_wrapper {
+    margin: 5% 15%;
+}
+
+.two_right_sm {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.two_right_sm *, .two_left_sm * {
+    box-sizing: border-box;
+}
+
+.two_right_sm>div:first-child {
+    width: 57%;
+    display: flex;
+}
+
+.two_right_sm>div:last-child {
+    width: 43%;
+    box-sizing: border-box;
+    background: #292929;
+    color: var(--color3);
+    padding: 6.1%;
+}
+
+.two_right_sm>div:first-child img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.two_right_sm>div:last-child h3 {
+    font-weight: normal;
+    text-align: center;
+    font-size: calc(13px + 11 * (100vw / 1920));
+    line-height: calc(21px + 11 * (100vw / 1920));
+}
+
+.two_right_sm>div:last-child ul {
+    font-weight: bold;
+    font-size: calc(13px + 3 * (100vw / 1920));
+    padding: 3em 1em 0 3em;
+}
+
+.two_reverse_sm {
+    flex-direction: row-reverse;
+}
+
+.two_right_sm a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+.two_reverse_sm div:last-child {
+    background: var(--color3);
+    color: rgba(0, 0, 0, 1);
+}
+
+.upper_txt {
+    text-transform: uppercase;
 }
