@@ -784,13 +784,118 @@
     .hamburger-menu_mob {
         display: block;
     }
+
     .body_wrapper {
         margin: 5% 3%;
     }
+
     .two_right_sm, .two_reverse_sm {
         flex-direction: column;
-    }   
+    }
+
     .two_right_sm>div:first-child, .two_right_sm>div:last-child {
         width: 100%;
+    }
+
+    .partnership {
+        margin-top: 15%;
+    }
+
+    .partnership .blog_header {
+        color: var(--color4);
+        background: none;
+        padding-right: 15%;
+        text-align: center;
+    }
+
+    .blog_header div {
+        width: 100%;
+    }
+
+    .blog_header h2 {
+        margin-left: 0;
+        font-weight: bold;
+    }
+
+    .two_div_col {
+        flex-direction: column;
+    }
+
+    .two_div_col>div {
+        width: 100%;
+    }
+
+    .two_div_col:first-child {
+        flex-direction: column-reverse;
+    }
+
+    .two_div_col:first-child .darkerd_back h2 {
+        margin-bottom: 2em;
+    }
+
+    .mob_block {
+        display: block;
+        margin-left: -1em;
+        margin-right: -1em;
+    }
+
+    .desc_block {
+        display: none;
+    }
+
+    .two_div_col:first-child .darkerd_back {
+        padding: 1em;
+    }
+
+    .partnership ul {
+        padding-left: 1em;
+    }
+
+    .partnership ul li {
+        margin-bottom: 1em;
+    }
+
+    .partnership h2 {
+        margin-left: 0;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+    .two_div_col:first-child>div:first-child>div:nth-child(3) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .two_div_col:first-child>div:first-child div:nth-child(3) p {
+        margin-top: 0;
+    }
+
+    .two_div_col:nth-child(2) div:first-child>div>div:nth-child(2) {
+        padding: 1em;
+        padding-top: 0;
+    }
+
+    .two_div_col:nth-child(2) div:first-child>div>div:nth-child(2) p:first-child {
+        margin-top: 0;
+    }
+
+    .two_div_col:nth-child(2) div:first-child>div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .two_div_col:nth-child(2)>div:last-child div:first-child {
+        padding: 1em;
+        color: var(--color3);
+        background: #292929;
+    }
+
+    .two_div_col:nth-child(2)>div:last-child div:last-child {
+        display: none;
+    }
+
+    .two_div_col:nth-child(4)>div:last-child {
+        padding: 1em;
     }
 }
