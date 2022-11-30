@@ -4256,6 +4256,66 @@ footer>div:nth-child(2) div:last-child {
     padding: 7em 3em;
 }
 
+.two_div_col:nth-child(4)>div:last-child a {
+    color: var(--color3);
+    text-decoration: none;
+}
+
 .mob_block {
     display: none;
+}
+
+/* OpRules */
+
+.oprules .blog_header {
+    padding-right: 15%;
+}
+
+.oprules .blog_header div {
+    width: 100%;
+}
+
+.oprules .two_div_col {
+    margin-bottom: 6em;
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+}
+
+.oprules .two_div_col>div:first-child {
+    padding-right: 3em;
+}
+
+.oprules .two_div_col>div:last-child {
+    padding-left: 3em;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+}
+
+.oprules .img_holder img {
+    height: 100%;
+}
+
+.oprules p, .oprules ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.oprules ul {
+    padding-left: 1em;
+}
+
+.rev_row {
+    flex-direction: row-reverse;
+}
+
+.oprules .rev_row>div:first-child {
+    padding-right: 0;
+    padding-left: 3em;
+}
+
+.oprules .rev_row>div:last-child {
+    padding-left: 0;
+    padding-right: 3em;
 }
