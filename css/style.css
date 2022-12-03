@@ -4321,22 +4321,16 @@ footer>div:nth-child(2) div:last-child {
 }
 
 .favorites_body .card_3to1 {
-    height: 28em;
-    width: 30%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-}
-
-.favorites_body .switcher_catalog a {
-    text-transform: uppercase;
-    text-align: left;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color1);
-    font-size: calc(5px + 10 * (100vw / 1920));
-}
-
-.favorites_body .mani_td td {
+    height: 33em;
     width: auto;
-    margin-right: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.favorites_body .prevar, .favorites_body .nextar {
+    bottom: 13%;
+}
+
+.favorites_body .prevar {
+    right: 9.8%;
 }
