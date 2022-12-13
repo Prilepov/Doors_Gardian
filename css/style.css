@@ -4195,11 +4195,15 @@ footer>div:nth-child(2) div:last-child {
     flex-direction: column;
 }
 
+.betw>div {
+    justify-content: space-between;
+}
+
 .partnership h2 {
     font-size: calc(13px + 11 * (100vw / 1920));
     line-height: calc(21px + 11 * (100vw / 1920));
     font-weight: normal;
-    margin-left: 2em;
+    margin-left: 0;
 }
 
 .partnership ul {
@@ -4219,6 +4223,7 @@ footer>div:nth-child(2) div:last-child {
 .darkerd_back {
     background: #292929;
     color: var(--color3);
+    position: relative;
 }
 
 .two_div_col:first-child .darkerd_back {
@@ -4333,4 +4338,134 @@ footer>div:nth-child(2) div:last-child {
 
 .favorites_body .prevar {
     right: 9.8%;
+}
+
+.partnership .body_wrapper>h2 {
+    text-align: center;
+}
+
+.partnership .body_wrapper>div>h2 {
+    margin: 2em;
+    font-weight: bold;
+}
+
+.two_div_col>div:nth-child(2) h2 {
+    color: var(--color3);
+}
+
+.some_btn {
+    font-size: calc(5px + 14 * (100vw / 1920));
+    padding: 0.26% 6.6%;
+    line-height: calc(20px + 30 * (100vw / 1920));
+    align-self: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #00913E;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color1) !important;
+}
+
+.partnership .justif_column .some_btn {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.some_btn:hover {
+    color: var(--color3) !important;
+    background: var(--color4);
+}
+
+.darkerd_back .bott {
+    position: absolute;
+    bottom: 3em;
+    margin-bottom: 0;
+}
+
+.betw p {
+    padding: 3em;
+    margin-top: 0;
+}
+
+.sec_two_div, .sec_two_div p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.two_last {
+    padding: 7em 3em;
+}
+
+.two_last a {
+    color: var(--color3);
+}
+
+.partner_h {
+    margin: 2em 0;
+}
+
+.put_request {
+    background-image: url(/images/req_back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5% 15%;
+}
+
+.request_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.request_form>div {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 1em;
+}
+
+.request_form label {
+    background: #00913E;
+    display: inline-block;
+    width: 100%;
+    border-radius: 5em 0% 0% 5em;
+    padding: 0.92% 0 0.92% 2.75%;
+    box-sizing: border-box;
+    color: var(--color3);
+}
+
+.request_form input {
+    width: calc(50% + 10em);
+    box-sizing: border-box;
+    color: rgba(208, 23, 23, 1);
+    border-radius: 5em;
+    margin-left: -10em;
+    padding: 0.92% 0 0.92% 2.75%;
+}
+
+.request_form .request_quest {
+    margin-left: 0;
+    width: 100%;
+}
+
+.put_request>div:first-child {
+    box-sizing: border-box;
+    padding: 2em;
+    background: rgba(41, 41, 41, 0.8);
+    border-radius: 5px 0px 0px 5px;
+    margin-top: 0.2em;
+    color: var(--color3);
+}
+
+.dbup {
+    position: absolute;
+    top: -4em;
+    color: #000;
+}
+
+.partnership .dbup {
+    margin-left: 2em;
+    font-weight: bold;
 }
